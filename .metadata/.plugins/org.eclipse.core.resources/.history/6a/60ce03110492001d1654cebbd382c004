@@ -1,0 +1,60 @@
+package day03;
+
+import java.util.Scanner;
+
+public class EmployeeDAO {
+	public static void create(EmployeeObjectArray emp[], int size) {
+		Scanner sc = new Scanner(System.in);
+		for(int i = 0; i<emp.length; i++) {
+			EmployeeObjectArray emp1 = new EmployeeObjectArray();
+			System.out.println("Please enter emplyee number ");
+			int empNo = sc.nextInt();
+			System.out.println("Please enter the emplyee name ");
+			String empNm = sc.next();
+			System.out.println("please enter employee salary");
+			double sal = sc.nextDouble();
+			
+//			int emplNo = sc.nextInt();
+//			String empName = sc.next();
+//			double empSalary = sc.nextDouble();
+			emp1.setEmpId(empNo);
+			emp1.setEmpName(empNm);
+			emp1.setEmpSalary(sal);
+			emp[i] = emp1;
+		}
+		System.out.println("Record created Successfully");
+	}
+	public static void read(EmployeeObjectArray emp[]) {
+		for(int i = 0; i < emp.length; i++) {
+			EmployeeObjectArray emp1 = emp[i];
+			System.out.println("Employee Id is " + emp1.getEmpId());
+			System.out.println("Employee Name is " + emp1.getEmpName());
+			System.out.println("Employee Salary is " + emp1.getEmpSalary());
+	}
+	}
+	public static void update(EmployeeObjectArray emp[]) {
+		EmployeeObjectArray em1 = new EmployeeObjectArray();
+		Scanner sc = new Scanner(System.in);
+		int id = sc.nextInt();
+		for(int i =0; i<emp.length; i++) {
+			EmployeeObjectArray emp1 = emp[i];
+			if(emp1.getEmpId()== id) {
+				System.out.println("enter the new name ");
+				String name = sc.next();
+				em1.setEmpName(name);
+				System.out.println("Enter new Id ");
+				int Id = sc.nextInt();
+				em1.setEmpId(Id);
+				System.out.println("Enter the new Salary");
+				double sal = sc.nextDouble();
+				em1.setEmpSalary(sal);
+			}
+		}
+		
+	}
+	public static void delete(EmployeeObjectArray[] emp) {
+		
+		
+	}
+
+}

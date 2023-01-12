@@ -1,0 +1,15 @@
+package Day4Class;
+
+public class Manager17 {
+	int i;
+	boolean b;
+	public static void main(String[] args) {
+		new Manager17().test();
+		
+	}
+	void test() {
+		System.out.println(i);
+		System.out.println(b);
+	}
+
+}

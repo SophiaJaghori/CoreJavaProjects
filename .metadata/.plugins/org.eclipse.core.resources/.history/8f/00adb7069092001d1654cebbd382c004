@@ -1,0 +1,19 @@
+package Day4Class;
+
+class Father20{
+	void drive() {
+		System.out.println("I love drinving ");
+	}
+}
+class Son extends Father20{
+	void drive() {
+		System.out.println("I love driving bike ");
+	}
+}
+public class Manager20 {
+	public static void main(String[] args) {
+		Father20 f = new Son();
+		f.drive();
+	}
+
+}

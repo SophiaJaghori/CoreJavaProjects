@@ -1,0 +1,31 @@
+package Day4Class;
+
+class Person19{
+	void drink() {
+		
+	}
+}
+class Employee19 extends Person19{
+	void login() {
+		System.out.println("login @9:00 AM ");//employee19 is having two methods 
+	}
+}
+class Manager19 extends Employee19{
+	void assignTask() {
+		System.out.println("Assign task to all emloyees ");
+	}
+}
+
+
+
+public class Manager19_Inheritence {
+	public static void main(String[] args) {
+		Manager19 m19 = new Manager19();
+		m19.assignTask();
+		m19.drink();
+		m19.login();
+		
+		
+	}
+
+}

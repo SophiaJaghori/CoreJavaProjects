@@ -1,0 +1,14 @@
+package Day4Class;
+
+
+class A21{
+	A21(){
+		System.out.println("Default Constructor _ A21");
+	}
+}
+public class Manager21 {
+	public static void main(String[] args) {
+		A21 a1 = new A21();
+	}
+
+}

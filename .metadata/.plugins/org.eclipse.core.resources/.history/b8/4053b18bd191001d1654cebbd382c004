@@ -1,0 +1,17 @@
+package day03;
+//Demonstarion of local and global variable
+public class Manager13 {
+	public static void main(String[] args) {
+		new Manager13().test();
+		
+		
+	}
+	int i = 10;
+	void test() {
+		int i = 20;
+		System.out.println(i);
+		System.out.println(new Manager13().i);
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+package ArrayProjects;
+
+public class TwoSum {
+	public static void main(String[] args) {
+		int[]arr = new int[10];
+		arr[0] = 3;
+		arr[1] = 4;
+		arr[2] = 3;
+		arr[3] = 15;
+		System.out.println(twoSumArry(arr, 7));
+		
+	}
+	static int[] twoSumArry(int[]arr1, int target) {
+		for(int i = 0; i< arr1.length; i++) {
+			for(int j = i+1; j<arr1.length; j++) {
+				if(arr1[i]+ arr1[j] == target) {
+					return new int[] {i,j};
+				}
+			}
+			
+		}
+		return arr1;
+		
+	}
+
+}

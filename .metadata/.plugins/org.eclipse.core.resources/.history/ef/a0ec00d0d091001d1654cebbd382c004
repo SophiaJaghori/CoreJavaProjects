@@ -1,0 +1,15 @@
+package day03;
+
+public class Manager13 {
+	public static void main(String[] args) {
+		new Manager13().test();
+		
+	}
+	int i = 10;
+	void test() {
+		int i = 20;
+		System.out.println(i);
+		
+	}
+
+}

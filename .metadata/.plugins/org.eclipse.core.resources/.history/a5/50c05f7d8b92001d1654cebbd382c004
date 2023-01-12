@@ -1,0 +1,15 @@
+package Day4Class;
+
+
+class Animal18{
+	void drink() {
+		System.out.println("water");
+	}
+}
+public class Manager18_Inheritence {
+	public static void main(String[] args) {
+		Animal18 animal = new Animal18();
+		animal.drink();
+	}
+
+}
